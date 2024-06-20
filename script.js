@@ -1,4 +1,4 @@
-let count = [1, 3, 1, 4];
+let count = [0, 0, 0, 0];
 
 function incrementCounter() {
     for (let i = count.length - 1; i >= 0; i--) {
