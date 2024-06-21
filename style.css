@@ -9,6 +9,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #1d19193b;
+    overflow-x: hidden;
 }
 
 h1 {
