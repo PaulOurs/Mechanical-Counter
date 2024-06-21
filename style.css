@@ -2,13 +2,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: #1d19193b;
 }
 
 h1 {
@@ -24,14 +24,20 @@ h1 {
 }
 
 button {
-    font-size: 1em;
-    padding: 10px 20px;
+    font-size: 1.2em;
+    padding: 18px 25px;
     margin: 5px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     background-color: #007bff;
     color: white;
+
+    /* Pour que les boutons ne soient pas trop grands sur mobile */
+    @media (max-width: 600px) {
+        font-size: 1.1em;
+        padding: 10px 20px;
+    }
 }
 
 button:hover {
@@ -40,4 +46,20 @@ button:hover {
 
 button:active {
     background-color: #004080;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input {
+    font-size: 1.2em;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 200px;
 }
